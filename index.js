@@ -39,6 +39,11 @@ app.use(express.json());
 app.use("/api", reqRoute);
 app.use("/auth", userRoute);
 
+// Définition de la route GET '/'
+app.get('/', (req, res) => {
+  res.status(200).json({ message: "Hello everybody!" });
+});
+
 const server = http.createServer(app);
 
 server.on("listening", () => {
