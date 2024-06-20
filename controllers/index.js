@@ -31,7 +31,7 @@ exports.prompt = async (req, res, next) => {
     // Envoi d'une réponse d'erreur au frontend avec un statut 500 (ou autre statut approprié)
     res.status(500).json({
       error:
-        "Une erreur s'est produite lors de la communication avec l'API OpenAI.",
+        `Une erreur s'est produite lors de la communication avec l'API OpenAI. ${error}`,
     });
   }
 };
