@@ -8,7 +8,7 @@ require("./db/connexion");
 const app = express();
 
 const userRoute = require("./routes/user");
-const reqRoute = require("./routes/index");
+const reqRoute = require("./routes/open");
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
