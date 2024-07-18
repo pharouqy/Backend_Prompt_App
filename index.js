@@ -11,7 +11,7 @@ const userRoute = require("./routes/user");
 const reqRoute = require("./routes/open");
 
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Origin", "https://pharouqy.github.io/Project_Prompt_OpenAPI_Frontend/index.html");
   res.setHeader(
     "Access-Control-Allow-Headers",
     "Authorization, Origin, X-Requested-With, Content, Accept, Content-Type"
